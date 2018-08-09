@@ -1,0 +1,57 @@
+
+* {
+    /*font-family: arial;*/
+    font-size: 12px;
+}
+#controls {
+    height: 22px;
+    line-height: 22px;
+    background: #FFF;
+    position: absolute;
+    padding: 4px 0 3px;
+    bottom: 10px;
+}
+#controls {
+    width: 100%;
+    margin: 0 auto;
+    height: 20px;
+    right: 0;
+}
+
+#jumptoinput{
+	height:20px;
+	line-height:20px;
+	float:right;
+	padding-right:30px;
+}
+#jumptoinput input#num{
+	width:19px;
+    height: 18px;
+	text-align:center;
+}
+a {
+    text-decoration: none;
+    color: #185ecf;
+}
+#navigation {
+    margin-right: 20px;
+}
+#navigation {
+    float: right;
+    width: 200px;
+    text-align: center;
+    padding-top: 3px;
+}
+#navigation img {
+    cursor: pointer;
+    float: left;
+}
+img {
+    border: 0px;
+}
+#text {
+    float: left;
+    width: 120px;
+    text-align: center;
+    margin-top: -2px;
+}

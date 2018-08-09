@@ -1,0 +1,274 @@
+body,html{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "微软雅黑";
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  ul li, ol li {
+    margin: 0;
+    padding: 0; }
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0; }
+
+a:link, a:hover, a:active {
+  text-decoration: none; }
+
+.clearfix {
+  overflow: hidden;
+  _zoom: 1; }
+
+.hide {
+  display: none; }
+
+.navbar-static-top {
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 108px;
+  margin-left: 108px;
+  background-color: #fff;
+  z-index: 500;
+  border-color: #d9dadc; }
+  .navbar-static-top .container-fluid {
+    border-bottom: 1px solid #d9dadc; }
+  .navbar-static-top .navbar-left {
+    height: 65px;
+    line-height: 65px;
+    margin-left: -15px; }
+    .navbar-static-top .navbar-left .logo {
+      display: inline-block;
+      width: 206px;
+      height: 40px;
+      margin-left: 30px;
+      margin-right: 10px;
+      font-size: 24px; }
+      .navbar-static-top .navbar-left .logo img {
+        max-width: 100%;
+        max-height: 100%; }
+    .navbar-static-top .navbar-left h2 {
+      font-family: "microsoft yahei", simhei;
+      display: inline-block;
+      padding-left: 10px;
+      border-left: 1px solid #ddd;
+      font-size: 22px;
+      color: #333; }
+  .navbar-static-top .navbar-right {
+    font-size: 0; }
+    .navbar-static-top .navbar-right .avator-wrap {
+      float: left;
+      height: 65px;
+      position: relative;
+      display: inline-block; }
+      .navbar-static-top .navbar-right .avator-wrap .img-wrap {
+        position: relative;
+        display: inline-block;
+        top: 10px;
+        left: 0px;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        -ms-behavior: url(../vendor/css3pie/PIE.htc);
+        behavior: url(../vendor/css3pie/PIE.htc); }
+        .navbar-static-top .navbar-right .avator-wrap .img-wrap img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          -ms-behavior: url(../vendor/css3pie/PIE.htc);
+          behavior: url(../vendor/css3pie/PIE.htc); }
+      .navbar-static-top .navbar-right .avator-wrap .user {
+        margin: 0 28px 0 10px;
+        line-height: 65px;
+        display: inline-block;
+        font-size: 14px; }
+    .navbar-static-top .navbar-right .icon-wrap {
+      float: left;
+      width: 60px;
+      height: 65px;
+      line-height: 65px;
+      margin: 0;
+      border-left: 1px solid #d9dadc;
+      font-size: 18px;
+      text-align: center;
+      color: #d6dae0;
+      cursor: pointer; }
+      .navbar-static-top .navbar-right .icon-wrap:last-child {
+        border: 0; }
+      .navbar-static-top .navbar-right .icon-wrap:hover {
+        color: #1dacd4; }
+    .navbar-static-top .navbar-right .icon-wrap:after {
+      content: ''; }
+  .navbar-static-top .breadcrumb {
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #fff; }
+    .navbar-static-top .breadcrumb .breadcrumb-back {
+      display: inline-block;
+      padding: 0 18px; }
+    .navbar-static-top .breadcrumb .breadcrumb-list {
+      margin-left: 0;
+      font-size: 0; }
+      .navbar-static-top .breadcrumb .breadcrumb-list .breadcrumb-item {
+        border-left: 1px solid #d9dadc;
+        padding: 12px 10px;
+        color: #666;
+        font-size: 14px; }
+        .navbar-static-top .breadcrumb .breadcrumb-list .breadcrumb-item:last-child {
+          border-right: 1px solid #d9dadc; }
+        .navbar-static-top .breadcrumb .breadcrumb-list .breadcrumb-item:hover {
+          border-color: #ffa454;
+          color: #fff;
+          background-color: #ffa454;
+          cursor: pointer; }
+          .navbar-static-top .breadcrumb .breadcrumb-list .breadcrumb-item:hover .icon-close {
+            color: #fff;
+            cursor: pointer; }
+        .navbar-static-top .breadcrumb .breadcrumb-list .breadcrumb-item:nth-child(1) {
+          padding: 12px 18px; }
+        .navbar-static-top .breadcrumb .breadcrumb-list .breadcrumb-item:nth-child(2) {
+          border-color: #42adcb;
+          color: #fff;
+          background-color: #42adcb; }
+
+/* =navbar-sidebar */
+.navbar-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #1dacd4;
+  z-index: 999;
+  margin-bottom: 0;
+  cursor: pointer; }
+  .navbar-sidebar .logo {
+    position: relative;
+    display: block;
+    width: 108px;
+    height: 65px;
+    text-align: center;
+    color: #fff;
+    background-color: #20c3f0; }
+    .navbar-sidebar .logo:hover {
+      text-decoration: none; }
+    .navbar-sidebar .logo h1 {
+      padding: 10px 0 0;
+      line-height: 1;
+      font-size: 28px; }
+    .navbar-sidebar .logo small {
+      margin-left: 10px;
+      font-size: 12px;
+      letter-spacing: 10px; }
+    .navbar-sidebar .logo .circle {
+      position: absolute;
+      top: 25.5px;
+      left: 101px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #20c3f0;
+      behavior: url("../vendor/css3pie/PIE.htc"); }
+  .navbar-sidebar .nav-main .nav-item:nth-child(1) .nav-item_icon {
+    background: transparent url(../img/nav-item-1.png) no-repeat 0 0; }
+  .navbar-sidebar .nav-main .nav-item:nth-child(2) .nav-item_icon {
+    background: transparent url(../img/nav-item-2.png) no-repeat 0 0; }
+  .navbar-sidebar .nav-main .nav-item:nth-child(3) .nav-item_icon {
+    background: transparent url(../img/nav-item-3.png) no-repeat 0 0; }
+  .navbar-sidebar .nav-main .nav-item:nth-child(4) .nav-item_icon {
+    background: transparent url(../img/nav-item-4.png) no-repeat 0 0; }
+  .navbar-sidebar .nav-main .nav-item:nth-child(5) .nav-item_icon {
+    background: transparent url(../img/nav-item-5.png) no-repeat 0 0; }
+  .navbar-sidebar .nav-main .nav-item:nth-child(6) .nav-item_icon {
+    background: transparent url(../img/nav-item-6.png) no-repeat 0 0; }
+  .navbar-sidebar .nav-main .nav-item:nth-child(7) .nav-item_icon {
+    background: transparent url(../img/nav-item-7.png) no-repeat 0 0; }
+  .navbar-sidebar .nav-main .nav-item:nth-child(8) .nav-item_icon {
+    background: transparent url(../img/nav-item-8.png) no-repeat 0 0; }
+  .navbar-sidebar .nav-main .nav-item {
+    position: relative;
+    padding: 15px 0;
+    background-color: #1dacd4; }
+    .navbar-sidebar .nav-main .nav-item:hover {
+      background-color: #1997ba; }
+      .navbar-sidebar .nav-main .nav-item:hover .nav-sub {
+        display: block; }
+    .navbar-sidebar .nav-main .nav-item .nav-item_icon {
+      width: 36px;
+      height: 36px;
+      margin: 0 auto;
+      background: transparent url(../img/nav-item-1.png) no-repeat 0 0;
+      background-size: 36px; }
+    .navbar-sidebar .nav-main .nav-item .nav-item_title {
+      margin-top: 15px;
+      margin-bottom: 0;
+      text-align: center;
+      font-size: 14px; }
+
+/* =nav-sub */
+.nav-sub {
+  display: none;
+  position: absolute;
+  left: 108px;
+  top: 0px;
+  width: 220px;
+  font-size: 14px;
+  color: #fff;
+  background: #2eb7df;
+  cursor: pointer;
+  z-index: 3000; }
+  .nav-sub.on {
+    display: block; }
+  .nav-sub .toggle {
+    display: block;
+    line-height: 55px;
+    font-size: 14px;
+    color: #fff;
+    background: url(../img/sub-nav-menu-close.png) no-repeat 90% 24px;
+    background-size: 8px 12px; }
+    .nav-sub .toggle.on {
+      border-bottom: 1px solid #4acce3;
+      background: #1fa7cd url(../img/sub-nav-menu-open.png) no-repeat 90% 24px;
+      background-size: 12px 8px; }
+    .nav-sub .toggle .toggle_icon {
+      width: 18px;
+      height: 20px;
+      margin-left: 15px; }
+    .nav-sub .toggle .toggle_title {
+      margin-left: 15px; }
+  .nav-sub .nav-sub_menu {
+    display: none;
+    list-style: circle inside; }
+    .nav-sub .nav-sub_menu.on {
+      display: block;
+      color: #d3f9ff;
+      background-color: #1fa7cd; }
+    .nav-sub .nav-sub_menu li {
+      margin: 0;
+      padding: 10px 0 10px 15px;
+
+      font-size: 12px; }
+      .nav-sub .nav-sub_menu li.on, .nav-sub .nav-sub_menu li:hover {
+        color: #fff; }
+      .nav-sub .nav-sub_menu li a {
+        color: #d3f9ff; }
+        .nav-sub .nav-sub_menu li a.on, .nav-sub .nav-sub_menu li a:hover {
+          color: #fff; }
+      .nav-sub .nav-sub_menu li p {
+        margin: 0;
+        width: 100px;
+        font-size: 12px; }
+.main-container {
+  margin-left: 108px;
+  padding: 0 40px 20px; }

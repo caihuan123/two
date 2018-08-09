@@ -1,0 +1,57 @@
+.left-menu{
+    width: 170px;
+    height: 100%;
+    background: #282d36;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    cursor:move;
+}
+.nav-ul .treeview img{
+    float: left;
+    margin-right: 10px;
+    border:none;
+}
+.nav-ul .treeview a{
+    padding: 12px 12px 12px 15px;
+    display: inline-block;
+    color:#c3c3c3;
+    font-size: 14px;
+    width: 140px;
+}
+.nav-ul .treeview .aChange:hover{
+    color:#fff;
+    border-left:3px solid #5493da;
+    background:#28363c;
+}
+.treeview.active .aChange{
+    color:#fff;
+    border-left:3px solid #5493da;
+    background:#28363c;
+}
+.inside{
+    display: none;
+    background: #353a42;
+}
+.inside .dotColor{
+    width: 8px;
+    height: 8px;
+    background: #696969;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+}
+.inside li span:hover{
+    color:#fff;
+}
+.inside li:hover .dotColor{
+    background: #f17132;
+}
+.inside li.active span{
+    color:#fff;
+}
+.inside li.active .dotColor{
+    background: #f17132;
+}

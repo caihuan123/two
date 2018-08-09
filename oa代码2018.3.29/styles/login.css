@@ -1,0 +1,157 @@
+.bg{
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+}
+.bg .header{
+    width: 100%;
+    height: 130px;
+    margin: 0 auto;
+}
+.header img{
+    float: left;
+}
+.header .logo{
+    padding: 36px 0 48px 45px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.header .logoTxet{
+    width: 50px;
+    padding-top: 80px;
+    margin-left: -54px;
+    float: left;
+}
+.header .textBox{
+    float: left;
+}
+.header .textBox span{
+    float: left;
+    display: block;
+    font-size: 32px;
+    padding: 37px 0;
+}
+.header .textBox span{
+    color:#fff;
+}
+.container{
+    width: 100%;
+    height: 400px;
+    /*background: url("../images/bg.jpg") no-repeat center center;*/
+    position: relative;
+    background-size: cover;
+}
+.container .img_box{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 56px;
+    left: 200px;
+}
+.login_box ul li{
+    width: 220px;
+    margin: 13px 0 30px 25px;
+}
+.login_box ul li input{
+    height: 36px;
+    width: 170px;
+    color:#666;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding-left: 34px;
+    line-height: 36px;
+}
+.login_box ul li .user,.lock{
+    position: absolute;
+    left: 40px;
+    font-size: 16px;
+    color: #ddd;
+}
+.login_box ul li .user{
+    top: 71px;
+}
+.login_box ul li .lock{
+    top: 140px;
+}
+.img_box img{
+    float: left;
+}
+.img_box .meishi{
+    width: 420px;
+    height: 315px;
+    margin-left: 68px;
+    margin-top: 4px;
+}
+.img_box .wenzi{
+    width: 100px;
+    height: 280px;
+    margin-left: 29px;
+    margin-top: 10px;
+}
+.container .login_box{
+    width: 256px;
+    height: 280px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 45px;
+    left: 766px;
+    box-shadow: 0 0 7px #d6d6d6;
+}
+.container .login_box p{
+    text-align: center;
+    color:#ff8738;
+    line-height: 40px;
+    margin-top: 10px;
+}
+.login_box ul{
+    width: 256px;
+    height: 260px;
+}
+.login_box .btn{
+    width: 210px;
+    height: 38px;
+    line-height: 38px;
+    background: #ff8738;
+    margin-left: 24px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    box-shadow: 0 2px 3px rgb(248, 175, 111);
+}
+.login_box .btn:hover,.help:hover{
+    cursor: pointer;
+}
+.login_box .help:hover{
+    color: #666;
+}
+.login_box .btn:hover{
+    background: #fc9049;
+}
+.login_box .help{
+    font-size: 14px;
+    color: #999;
+    float: right;
+    display: block;
+    margin: -22px 25px 19px 0;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+.footer span{
+    font-size: 14px;
+    color: #666;
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+}

@@ -1,0 +1,430 @@
+body,html{
+    background: #ececec !important;
+    overflow-y: auto;
+}
+.main-left{
+    width: 49.5%;
+    margin-right: 0.5%;
+    float: left;
+}
+.main-right{
+    width: 48%;
+    float: right;
+}
+.dblc{
+    width: 100%;
+    height: 182px;
+    background:#fff;
+    border-radius: 4px;
+    margin: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.dblc ul{
+    float: left;
+    margin: 10px !important;
+}
+.dblc ul li{
+    width: 167px;
+    height: 70px;
+    float: left;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+.dblc ul li:hover{
+    cursor: pointer;
+}
+.dblc ul .lc{
+    background: #5abd6b;
+}
+.dblc ul .zc{
+    background: #f8614d;
+}
+.dblc ul .xm{
+    background: #3a93e6;
+}
+.dblc ul .wd{
+    background: #febd59;
+}
+.dblc ul .gg{
+    background: #83a5d2;
+}
+.dblc ul .kh{
+    background: #70c0b3;
+}
+.dblc ul li img{
+    padding: 15px 10px 15px;
+    float: left;
+}
+.dblc ul li span{
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    float: left;
+    padding: 27px 8px 0;
+}
+.dbgz,.gonggao,.gswd{
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    border-radius: 4px;
+    margin: 0 10px 10px 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.gswd{
+    float: right;
+}
+.dbgz .title,.gonggao .title,.gswd .title{
+    width: 100%;
+    height: 30px;
+    background: #edf5fd;
+    border-bottom: 1px solid #ddd;
+}
+.dbgz .title span,.gonggao .title span,.gswd .title span{
+    line-height: 30px;
+}
+.dbgz .title .db,.gonggao .title .db,.gswd .title .db{
+    font-size: 16px;
+    float: left;
+    color:#fff;
+}
+.dbgz .title .more,.gonggao .title .more,.gswd .title .more{
+    font-size: 14px;
+    float: right;
+    color: #666;
+    padding-right: 10px;
+}
+.neirong{
+    padding: 0 5px;
+    height: 164px;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+}
+.neirong ul{
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.neirong ul li{
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ececec;
+    cursor: pointer;
+}
+.neirong ul li:nth-child(even) {
+    background: #fbfbfb;
+}
+.neirong ul li span{
+    font-size: 14px;
+    color: #333;
+    line-height: 34px;
+    display: block;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.neirong ul li .huiyi{
+    width: 54%;
+}
+.neirong ul li .xingming{
+    width: 15%;
+}
+.neirong ul li .ck{
+    width: 7%;
+}
+.neirong ul li .shijian{
+    width: 18%;
+    color:#666;
+}
+.gonggao{
+    float: left;
+}
+ .neirong .time{
+    width: 20%;
+    color:#666;
+}
+.rc{
+    width: 100%;
+    height: 392px;
+    float: right;
+    background:#fff;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.aboluo-w-700{
+    height: 220px !important;
+    width: 100% !important;
+    margin:0 !important;
+}
+.aboluo-leftdiv{
+    width: 74% !important;
+    margin-right: 10px;
+    float: right !important;
+}
+.aboluo-rilidiv .aboluo-rilitable tr td a{
+    font-size: 16px !important;
+    color: #333 !important;
+}
+.aboluo-rilidiv .aboluo-rilitable tr td a:hover{
+    background: #fbf0d2;
+    border-radius: 50%;
+    border:none !important;
+}
+.aboluo-rilidiv .aboluo-rilitable tr td a:active{
+    border:none !important;
+}
+.aboluo-rightdiv{
+    width: 22% !important;
+    margin-left: 0 !important;
+}
+.aboluo-rilitable{
+    height: 60% !important;
+}
+.rc .richeng{
+    width: 96%;
+    margin: 10px;
+}
+.rc .richeng table{
+    width: 100%;
+}
+.rc .richeng table tr{
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.rc .richeng table th{
+    border-left: 2px solid #0e90d2;
+    background: #ececec;
+}
+.xmImg,.wdImg{
+    padding-top: 20px !important;
+}
+.dblc .lc:hover{
+    background: #72d683;
+}
+.dblc .zc:hover{
+    background: #ff7e6d;
+}
+.dblc .xm:hover{
+    background: #58acfb;
+}
+.dblc .wd:hover{
+    background: #fdc56f;
+}
+.dblc .gg:hover{
+    background: #95b5e0;
+}
+.dblc .kh:hover{
+    background: #80d8ca;
+}
+.db{
+    width: 256px;
+}
+.db span{
+    display: inline-block;
+    margin-top: -2px;
+    margin-left: -94px;
+}
+.neirong .dot{
+    width: 5px;
+    height: 5px;
+    float: left;
+    background: #999;
+    border-radius: 10px;
+    margin: 14px 5px 0 10px;
+}
+.gb-icon,.wd-icon{
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 10px 5px 0 10px;
+    background: url(../images/gg-img.png) no-repeat;
+}
+.wd-icon{
+    background: url("../images/wd-img.png") no-repeat;
+}
+.gswd .neirong .tz,.gonggao .neirong .tz{
+    width: 70%;
+}
+.neirong .tz{
+    width: 66% !important;
+}
+.more:hover{
+    cursor: pointer;
+}
+.aboluo-ssjjr select,.aboluo-ssjjr input{
+    display: none;
+}
+.aboluo-currday{
+    margin-top: 30px !important;
+}
+.main-right .rcap{
+    width: 94%;
+    height: 110px;
+    margin: 10px;
+    overflow-y: auto;
+    border-bottom: none !important;
+}
+.main-right .rcap table{
+    width: 100%;
+}
+.main-right .rcap tr{
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.main-right .rcap th{
+    width: 26%;
+    height: 30px;
+    background: #efefef;
+    border-left: 4px solid #317dc3;
+    padding-left: 10px;
+}
+.main-right .rcap td{
+    padding-left: 10px;
+}
+.addBtn{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #317dc3;
+    border-radius: 50%;
+    margin: 4px 47% 4px 47%;
+}
+.addBtn a{
+    font-size: 26px;
+    display: block;
+    margin: 0 auto;
+    width: 15px;
+    height: 20px;
+    margin-top: -7px;
+}
+ .addBtn a:hover{
+    text-decoration: none;
+}
+.addBox{
+    width: 100%;
+    height: 30px;
+}
+.i-main{
+    width: 100%;
+    height: 100%;
+}
+.addBtn:hover{
+    background: #317dc3;
+}
+.addBtn:hover a{
+    color: #fff !important;
+}
+.neirong li:hover .dot{
+    background: #FFBB00;
+}
+.neirong li:hover .gb-icon{
+    background: url("../images/gg-yellow.png");
+}
+.neirong li:hover .wd-icon{
+    background: url("../images/wd-yellow.png");
+}
+.dbgz .nrxq,.dbgz .xqBox,.rqBox,.ggxq,.ggBox,.gswd .gsxq,.gswd .gsBox{
+    width: 600px;
+    background: #fff;
+    border-radius: 5px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    display: none;
+}
+.nrxq-header span{
+    font-size: 16px;
+    display: inline-block;
+    padding: 11px 30px;
+}
+.nrxq-header{
+    height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.nrxq .neirong,.ggxq .neirong,.gsxq .neirong{
+    width: 98%;
+    height: 440px;
+    overflow-y: auto;
+}
+.xqnr{
+    height: 240px;
+    width: 100%;
+}
+.wzBold{
+    font-size: 14px;
+    font-weight: 600;
+}
+.xqUl li{
+    margin: 15px 20px;
+}
+.xqBox,.rqBox,.ggBox,.gsBox{
+    width: 500px !important;
+    height: 300px !important;
+}
+.btnBox{
+    width: 100%;
+    height: 40px;
+}
+.btnBox input{
+    padding: 3px 15px;
+    border: 1px solid #42acfc;
+    background: none;
+    border-radius: 5px;
+    color:#42acfc;
+    font-size: 12px;
+}
+.btnBox input:hover{
+    background: #42acfc;
+    color:#fff;
+}
+.btnBox .qd{
+    margin-left: 156px;
+    margin-right: 66px;
+}
+.xqUl textarea{
+    width: 330px;
+    height: 85px;
+}
+.input-append input,.input-append span{
+    height: 36px !important;
+    line-height: 30px !important;
+}
+.aboluo-tools input{
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.dblc ul li a{
+    width: 22px;
+    height: 22px;
+    background: #f74d4d;
+    display: inline-block;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+}
+.dblc ul li a:hover{
+    text-decoration: none;
+}
+.dblc ul .lc a{
+    margin: 15px 0 0 -102px;
+}
+.dblc ul .zc a{
+    margin: 15px 0 0 -137px;
+}
+.dblc ul .xm a,.dblc ul .wd a{
+    margin: 15px 0 0 -96px;
+}
+.dblc ul .gg a,.dblc ul .kh a{
+    margin: 15px 0 0 -105px;
+}

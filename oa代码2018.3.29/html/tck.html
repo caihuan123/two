@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹出框</title>
+    <link rel="stylesheet" type="text/css" href="../styles/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../styles/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../styles/tck.css">
+    <link href="../styles/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../styles/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="Top">
+    <input type="button" value="按钮"/>
+</div>
+<!--弹出框-->
+<div class="tckBox">
+    <div class="nrxq-header">
+        <span class="header-text">待办工作详情</span>
+        <span class="close">X</span>
+    </div>
+    <div class="xqnr">
+        <table>
+            <tbody>
+            <tr>
+                <th>标题</th>
+                <td><input type="text"></td>
+                <th>重要程度</th>
+                <td>
+                    <select>
+                        <option>重要</option>
+                        <option>普通</option>
+                        <option>一般</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>开始时间</th>
+                <td>
+                    <input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime">
+                    <input type="checkbox">农历
+                </td>
+                <th>结束时间</th>
+                <td>
+                    <input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime">
+                </td>
+            </tr>
+            <tr>
+                <th>重复频率</th>
+                <td>
+                    <select>
+                        <option>一次</option>
+                        <option>每天</option>
+                        <option>每周</option>
+                        <option>每月</option>
+                    </select>
+                </td>
+                <th></th>
+                <td>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>内容</th>
+                <td>
+                    <textarea rows="4" cols="22"></textarea>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="btnBox">
+            <input class="bj" type="button" value="编辑">
+            <input type="button" value="删除">
+            <input type="button" value="关闭">
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../js/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script>
+    $(window).load(function () {
+        $(".Top").click(function () {
+            $(".tckBox").show();
+        })
+        $(".close").click(function () {
+            $(".tckBox").hide();
+        })
+
+        $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+//       document.getElementById("time").valueAsDate = new Date();
+    })
+</script>
+</body>
+</html>

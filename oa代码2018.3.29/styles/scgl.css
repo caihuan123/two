@@ -1,0 +1,256 @@
+body,html{
+    overflow: hidden;
+}
+.top{
+    width: 100%;
+    height: 36px;
+    /*background: #f6f6f6;*/
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.top a{
+    font-size: 14px;
+    line-height: 36px;
+    color: #333;
+}
+.tx-list{
+    font-size: 14px;
+    font-weight: 700;
+    color: #42acfc;
+    display: block;
+    width: 100%;
+    padding: 10px 30px;
+    float: left;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.tx-search th{
+    padding-left: 52px;
+}
+.tx-search td{
+    padding-left: 10px;
+}
+.tx-search th,.tx-search td{
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+}
+.tx-search input,.tx-search select{
+    border-radius: 3px;
+    border: 1px solid #d2d8db;
+    line-height: 28px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+}
+.tx-search input{
+    width: 134px;
+    height: 28px;
+}
+.tx-search select{
+    width: 134px;
+    height: 28px;
+    padding-left: 35px;
+}
+input[type=button]{
+    width: 56px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    border: none;
+    background:#42acfc;
+    color:#fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+input[type=button]:hover{
+    background: #259ef9;
+    cursor: pointer;
+}
+.tx-search{
+    float: left;
+    margin-bottom: 15px;
+}
+.txl-button{
+    float: right;
+}
+.txl-button li{
+    float: left;
+    width: 80px;
+    margin-right: 10px;
+}
+.txl-button a{
+    border: 1px solid #42acfc;
+    color:#42acfc;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 6px 8px;
+    display: inline-block;
+}
+.txl-button a:hover,.modal-button .cancel:hover{
+    background: #259ef9;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+    color:#fff;
+    border:none;
+}
+.txl-ifo{
+    width: 99%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+    border-right: none;
+    table-layout:fixed;
+}
+.txl-ifo th{
+    font-size: 14px;
+    height: 28px;
+    background: #f1f1f1;
+    text-align: center;
+    border-bottom: #ddd 1px solid;
+    border-right: #ddd 1px solid;
+    color: #333;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.txl-ifo td{
+    font-size: 12px;
+    color:#333;
+    text-align: center;
+    padding: 12px 6px 10px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.txl-ifo tr:hover{
+    background: #f8fbfe;
+}
+.table-box{
+    overflow-y: auto;
+    width: 100%;
+    height: 374px;
+}
+
+/*菜单栏切换*/
+.hide{display:none;}
+.top { clear:both;}
+.top ul{
+    margin-left: 30px;
+}
+.top li {
+    float:left;
+    text-align:center;
+    cursor:pointer;
+    list-style:none;
+    padding:4px 18px;
+    margin-right:4px;
+    border-bottom:none;
+    margin-top: 10px;
+    font-size: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.top li.hover {
+    background:#84c7fb;
+    color:#fff;
+}
+.top li.selected { color:#FFF; background:#84c7fb;}
+.tab{
+    width: 100%;
+    height: 36px;
+}
+.txl-ifo tr:hover{
+    cursor: pointer;
+}
+.modal-body a{
+    font-size: 14px;
+    display: block;
+    float: right;
+}
+.modal-body table td{
+    height: 30px;
+}
+.modal-body table label{
+    font-size: 14px;
+    color: #333;
+    width: 126px;
+}
+.modal-body table span{
+    font-size: 14px;
+    color: #666;
+}
+.modal-button .cancel{
+    border: 1px solid #42acfc;
+    color:#42acfc;
+    font-size: 12px;
+    background: none;
+    margin-left: 30px;
+}
+.modal-button{
+    margin-left: 184px;
+    margin-top: 10px;
+    display: none;
+}
+.modal.fade{
+    top:20% !important;
+}
+.modal-body{
+    max-height: 900px;
+}
+/*配送信息*/
+.txl-psxx{
+    border:1px solid #ddd;
+    width: 99%;
+    margin: 0 auto;
+}
+.txl-psxx th{
+    border:1px solid #ddd;
+    /*width: 100px;*/
+    height: 30px;
+    padding: 0 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.txl-psxx td{
+    border:1px solid #ddd;
+}
+.txl-psxx td input{
+    border:none;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    border-radius: 0;
+    line-height: 30px;
+    margin-bottom: 0;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+    background-color: none;
+}
+.txl-psxx input[type="checkbox"]{
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin-left: 78px;
+}
+.txl-psxx label{
+    float: left;
+    margin-left: 10px;
+}
+.txl-psxx .add-tax-l{
+    border-right: none;
+}
+.txl-psxx .add-tax-r{
+    border-left: none;
+}
+.add-tax{
+    margin-left: 50px;
+}
+.top-height{
+    height: 108px;
+    margin-bottom: 10px;
+}

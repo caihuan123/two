@@ -1,0 +1,108 @@
+body,html{
+    background: #f1f1f1;
+}
+.top{
+    width: 100%;
+    height: 60px;
+    background: #3680c5;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+}
+.nav-r{
+    height: 60px;
+    float: right;
+    margin-right: 20px;
+}
+.nav-r ul li{
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    margin-left: 10px;
+}
+.xiu span:hover{
+    color: #b1daf7;
+}
+.nav-r ul .nav-current{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.nav-r ul li span{
+    padding-left: 7px;
+    font-size: 12px;
+    color: #fff;
+}
+img{
+    border:none;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.menu-iframe{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:60px;
+    bottom: 0;
+    width: 170px;
+}
+.daiban-iframe{
+    position: absolute;
+    left: 180px;
+    right: 0;
+    top:60px;
+    bottom: 0;
+}
+.logo{
+    width: 400px;
+    height: 60px;
+    margin-left: 30px;
+    float: left;
+}
+.logo-img{
+    width: 34px;
+    height: 34px;
+    display: block;
+    margin-top: 6px;
+    margin-left: 4px;
+    float: left;
+}
+.logo-text-img{
+    margin-top: 40px;
+    width: 40px;
+    height: 15px;
+    display: block;
+    float: left;
+    margin-left: -40px;
+}
+.logo-text{
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    float: left;
+    margin-left: 16px;
+    letter-spacing: 1px;
+}
+.fold-left,.fold-right{
+    float:left;
+    position: absolute;
+    top:50%;
+    left: 170px;
+    z-index: 99;
+    margin: auto;
+    display: block;
+    width: 10px;
+    height: 30px;
+    cursor: pointer;
+    background: url(../images/fold-btn.png) no-repeat center left;
+}
+.fold-right{
+    display: none;
+    left: 0;
+    background-position:center right;
+}

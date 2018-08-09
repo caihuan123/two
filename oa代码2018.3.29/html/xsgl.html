@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通讯录</title>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../styles/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../styles/xsgl.css">
+    <link rel="stylesheet" type="text/css" href="../styles/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/index-fenye.css">
+</head>
+<body>
+<div class="tab">
+<div class="top">
+    <ul>
+        <li class="selected">客户信息</li>
+        <li>订单信息</li>
+        <li>发货信息</li>
+        <li>配送信息</li>
+        <li>下单信息</li>
+        <li>客户投诉处理</li>
+        <li>客户跟踪处理</li>
+    </ul>
+</div>
+    <div class="tab_menu">
+        <!--客户信息-->
+        <div class="table-boxs">
+            <span class="tx-list">客户信息列表:</span>
+            <table class="tx-search">
+            <tr>
+        <th>姓名</th>
+        <td><input type="text"></td>
+        <th>部门</th>
+        <td>
+            <select>
+                <option>研发部</option>
+                <option>研发部</option>
+            </select>
+        </td>
+        <th>
+            <input type="button" value="搜索">
+        </th>
+    </tr>
+            </table>
+            <ul class="txl-button">
+    <li>
+        <a><i class="fa fa-mail-forward">  导入</i></a>
+    </li>
+    <li>
+        <a><i class="fa fa-mail-reply">  导出</i></a>
+    </li>
+    <li>
+        <a class="btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus">  增加</i></a>
+    </li>
+</ul>
+        <div class="table-box">
+        <table class="txl-ifo" cellpadding="0" cellspacing="0" border="0">
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>客户单位名称</th>
+            <th>法人代表</th>
+            <th>经营范围</th>
+            <th>单位地址</th>
+            <th>联系电话</th>
+            <th>企业邮箱</th>
+            <th>企业联系人姓名</th>
+            <th>联系人电话</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="btn-lg" data-toggle="modal" data-target="#myModal">
+            <td>1</td>
+            <td>华创北斗技术有限公司</td>
+            <td>张三</td>
+            <td>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</td>
+            <td>湖北省武汉市洪山区文秀街10号A座1号门9</td>
+            <td>13371267899</td>
+            <td>1337126@163.com</td>
+            <td>张三</td>
+            <td>13371267899</td>
+        </tr>
+        <tr class="btn-lg" data-toggle="modal" data-target="#myModal">
+            <td>1</td>
+            <td>华创北斗技术有限公司</td>
+            <td>张三</td>
+            <td>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</td>
+            <td>湖北省武汉市洪山区文秀街10号A座1号门9</td>
+            <td>13371267899</td>
+            <td>1337126@163.com</td>
+            <td>张三</td>
+            <td>13371267899</td>
+        </tr>
+        <tr class="btn-lg" data-toggle="modal" data-target="#myModal">
+            <td>1</td>
+            <td>华创北斗技术有限公司</td>
+            <td>张三</td>
+            <td>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</td>
+            <td>湖北省武汉市洪山区文秀街10号A座1号门9</td>
+            <td>13371267899</td>
+            <td>1337126@163.com</td>
+            <td>张三</td>
+            <td>13371267899</td>
+        </tr>
+        <tr class="btn-lg" data-toggle="modal" data-target="#myModal">
+            <td>1</td>
+            <td>华创北斗技术有限公司</td>
+            <td>张三</td>
+            <td>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</td>
+            <td>湖北省武汉市洪山区文秀街10号A座1号门9</td>
+            <td>13371267899</td>
+            <td>1337126@163.com</td>
+            <td>张三</td>
+            <td>13371267899</td>
+        </tr>
+        <tr class="btn-lg" data-toggle="modal" data-target="#myModal">
+            <td>1</td>
+            <td>华创北斗技术有限公司</td>
+            <td>张三</td>
+            <td>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</td>
+            <td>湖北省武汉市洪山区文秀街10号A座1号门9</td>
+            <td>13371267899</td>
+            <td>1337126@163.com</td>
+            <td>张三</td>
+            <td>13371267899</td>
+        </tr>
+        <tr class="btn-lg" data-toggle="modal" data-target="#myModal">
+            <td>1</td>
+            <td>华创北斗技术有限公司</td>
+            <td>张三</td>
+            <td>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</td>
+            <td>湖北省武汉市洪山区文秀街10号A座1号门9</td>
+            <td>13371267899</td>
+            <td>1337126@163.com</td>
+            <td>张三</td>
+            <td>13371267899</td>
+        </tr>
+        <tr class="btn-lg" data-toggle="modal" data-target="#myModal">
+            <td>1</td>
+            <td>华创北斗技术有限公司</td>
+            <td>张三</td>
+            <td>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</td>
+            <td>湖北省武汉市洪山区文秀街10号A座1号门9</td>
+            <td>13371267899</td>
+            <td>1337126@163.com</td>
+            <td>张三</td>
+            <td>13371267899</td>
+        </tr>
+        <tr class="btn-lg" data-toggle="modal" data-target="#myModal">
+            <td>1</td>
+            <td>华创北斗技术有限公司</td>
+            <td>张三</td>
+            <td>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</td>
+            <td>湖北省武汉市洪山区文秀街10号A座1号门9</td>
+            <td>13371267899</td>
+            <td>1337126@163.com</td>
+            <td>张三</td>
+            <td>13371267899</td>
+        </tr>
+        <tr class="btn-lg" data-toggle="modal" data-target="#myModal">
+            <td>1</td>
+            <td>华创北斗技术有限公司</td>
+            <td>张三</td>
+            <td>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</td>
+            <td>湖北省武汉市洪山区文秀街10号A座1号门9</td>
+            <td>13371267899</td>
+            <td>1337126@163.com</td>
+            <td>张三</td>
+            <td>13371267899</td>
+        </tr>
+        <tr class="btn-lg" data-toggle="modal" data-target="#myModal">
+            <td>1</td>
+            <td>华创北斗技术有限公司</td>
+            <td>张三</td>
+            <td>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</td>
+            <td>湖北省武汉市洪山区文秀街10号A座1号门9</td>
+            <td>13371267899</td>
+            <td>1337126@163.com</td>
+            <td>张三</td>
+            <td>13371267899</td>
+        </tr>
+        <tr class="btn-lg" data-toggle="modal" data-target="#myModal">
+            <td>1</td>
+            <td>华创北斗技术有限公司</td>
+            <td>张三</td>
+            <td>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</td>
+            <td>湖北省武汉市洪山区文秀街10号A座1号门9</td>
+            <td>13371267899</td>
+            <td>1337126@163.com</td>
+            <td>张三</td>
+            <td>13371267899</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        <!--订单信息-->
+        <div class="hide">
+            <span class="tx-list">订单信息列表:</span>
+            <table class="tx-search">
+                <tr>
+                    <th>订单编号</th>
+                    <td><input type="text"></td>
+                    <th>订货日期</th>
+                    <td>
+                        <select>
+                            <option>研发部</option>
+                            <option>研发部</option>
+                        </select>
+                    </td>
+                    <th>
+                        <input type="button" value="搜索">
+                    </th>
+                </tr>
+            </table>
+            <ul class="txl-button">
+                <li>
+                    <a><i class="fa fa-mail-forward">  导入</i></a>
+                </li>
+                <li>
+                    <a><i class="fa fa-mail-reply">  导出</i></a>
+                </li>
+                <li>
+                    <a class="btn-lg" data-toggle="modal" data-target="#order"><i class="fa fa-plus">  增加</i></a>
+                </li>
+            </ul>
+                <table class="txl-ifo" cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                    <tr>
+                        <th>订单编号</th>
+                        <th>采购单位</th>
+                        <th>产品</th>
+                        <th>数量</th>
+                        <th>单价</th>
+                        <th>总金额</th>
+                        <th>订货日期</th>
+                        <th>回款日期</th>
+                        <th>货物收到日期</th>
+                        <th>发票信息</th>
+                        <th>备注</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="btn-lg" data-toggle="modal" data-target="#order">
+                        <td>1</td>
+                        <td>华创北斗技术有限公司</td>
+                        <td>接收机</td>
+                        <td>100</td>
+                        <td>10000.00</td>
+                        <td>100000.00</td>
+                        <td>2017-12-26</td>
+                        <td>2018-01-20</td>
+                        <td>2018-01-20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="btn-lg" data-toggle="modal" data-target="#order">
+                        <td>1</td>
+                        <td>华创北斗技术有限公司</td>
+                        <td>接收机</td>
+                        <td>100</td>
+                        <td>10000.00</td>
+                        <td>100000.00</td>
+                        <td>2017-12-26</td>
+                        <td>2018-01-20</td>
+                        <td>2018-01-20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="btn-lg" data-toggle="modal" data-target="#order">
+                        <td>1</td>
+                        <td>华创北斗技术有限公司</td>
+                        <td>接收机</td>
+                        <td>100</td>
+                        <td>10000.00</td>
+                        <td>100000.00</td>
+                        <td>2017-12-26</td>
+                        <td>2018-01-20</td>
+                        <td>2018-01-20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="btn-lg" data-toggle="modal" data-target="#order">
+                        <td>1</td>
+                        <td>华创北斗技术有限公司</td>
+                        <td>接收机</td>
+                        <td>100</td>
+                        <td>10000.00</td>
+                        <td>100000.00</td>
+                        <td>2017-12-26</td>
+                        <td>2018-01-20</td>
+                        <td>2018-01-20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="btn-lg" data-toggle="modal" data-target="#order">
+                        <td>1</td>
+                        <td>华创北斗技术有限公司</td>
+                        <td>接收机</td>
+                        <td>100</td>
+                        <td>10000.00</td>
+                        <td>100000.00</td>
+                        <td>2017-12-26</td>
+                        <td>2018-01-20</td>
+                        <td>2018-01-20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="btn-lg" data-toggle="modal" data-target="#order">
+                        <td>1</td>
+                        <td>华创北斗技术有限公司</td>
+                        <td>接收机</td>
+                        <td>100</td>
+                        <td>10000.00</td>
+                        <td>100000.00</td>
+                        <td>2017-12-26</td>
+                        <td>2018-01-20</td>
+                        <td>2018-01-20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="btn-lg" data-toggle="modal" data-target="#order">
+                        <td>1</td>
+                        <td>华创北斗技术有限公司</td>
+                        <td>接收机</td>
+                        <td>100</td>
+                        <td>10000.00</td>
+                        <td>100000.00</td>
+                        <td>2017-12-26</td>
+                        <td>2018-01-20</td>
+                        <td>2018-01-20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="btn-lg" data-toggle="modal" data-target="#order">
+                        <td>1</td>
+                        <td>华创北斗技术有限公司</td>
+                        <td>接收机</td>
+                        <td>100</td>
+                        <td>10000.00</td>
+                        <td>100000.00</td>
+                        <td>2017-12-26</td>
+                        <td>2018-01-20</td>
+                        <td>2018-01-20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="btn-lg" data-toggle="modal" data-target="#order">
+                        <td>1</td>
+                        <td>华创北斗技术有限公司</td>
+                        <td>接收机</td>
+                        <td>100</td>
+                        <td>10000.00</td>
+                        <td>100000.00</td>
+                        <td>2017-12-26</td>
+                        <td>2018-01-20</td>
+                        <td>2018-01-20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+        </div>
+        <!--发货信息-->
+        <div class="hide">
+            <span class="tx-list">发货信息列表:</span>
+            <table class="tx-search">
+                <tr>
+                    <th>发货日期</th>
+                    <td><input type="text"></td>
+                    <th>发货单位</th>
+                    <td>
+                        <select>
+                            <option>研发部</option>
+                            <option>研发部</option>
+                        </select>
+                    </td>
+                    <th>
+                        <input type="button" value="搜索">
+                    </th>
+                </tr>
+            </table>
+            <ul class="txl-button">
+                <li>
+                    <a><i class="fa fa-mail-forward">  导入</i></a>
+                </li>
+                <li>
+                    <a><i class="fa fa-mail-reply">  导出</i></a>
+                </li>
+                <li>
+                    <a class="btn-lg" data-toggle="modal" data-target="#send"><i class="fa fa-plus">  增加</i></a>
+                </li>
+            </ul>
+            <table class="txl-ifo" cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>货物名称</th>
+                    <th>数量</th>
+                    <th>货物总件数</th>
+                    <th>目的地</th>
+                    <th>收货人</th>
+                    <th>收货人电话</th>
+                    <th>发货人</th>
+                    <th>提货人</th>
+                    <th>提货人电话</th>
+                    <th>付费方式</th>
+                    <th>预收运费</th>
+                    <th>其他费用</th>
+                    <th>备注</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--配送信息-->
+        <div class="hide">
+            <span class="tx-list">配送信息列表:</span>
+            <table class="tx-search">
+                <tr>
+                    <th>发货日期</th>
+                    <td><input type="text"></td>
+                    <th>发货单位</th>
+                    <td>
+                        <select>
+                            <option>研发部</option>
+                            <option>研发部</option>
+                        </select>
+                    </td>
+                    <th>
+                        <input type="button" value="搜索">
+                    </th>
+                </tr>
+            </table>
+            <ul class="txl-button">
+                <li>
+                    <a><i class="fa fa-mail-forward">  导入</i></a>
+                </li>
+                <li>
+                    <a><i class="fa fa-mail-reply">  导出</i></a>
+                </li>
+                <li>
+                    <a class="btn-lg" data-toggle="modal" data-target="#send"><i class="fa fa-plus">  增加</i></a>
+                </li>
+            </ul>
+            <div class="scroll-bar">
+            <table class="txl-psxx" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <th>卖方：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <th>联系人：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>地址：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <th>电话：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>买方：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <th>日常联系人：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>地址：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <th>电话：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>买方发票信息：</th>
+                    <td colspan="2">
+                        <input type="checkbox">
+                        <label>普通发票</label>
+                    </td>
+                    <td class="add-tax-l">
+                        <input type="checkbox" class="add-tax">
+                        <label>增值税发票（增值税专票填写以下信息）</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>买方税号：</th>
+                    <td colspan="3">
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>账号：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <th>开户行：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>发票地址：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <th>发票电话：</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+            </table>
+            <table class="txl-psxx" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <th>产品名称：</th>
+                    <th>型号：</th>
+                    <th>产品规格：</th>
+                    <th>单位：</th>
+                    <th>数量：</th>
+                    <th>单价（元）：</th>
+                    <th>合计（元）：</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <span>台</span>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <span>0.00</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <span>合计</span>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <span>-</span>
+                    </td>
+                    <td>
+                        <span>0.00</span>
+                    </td>
+                </tr>
+            </table>
+            <div class="sumM">
+                <span class="sunM-text">保证和保修</span>
+                <span class="sumM-capital">
+                    总价 ： （大写）  （小写）： <input type="text">￥
+                    <input type="text">元
+                </span>
+            </div>
+            </div>
+        </div>
+        <!--下单信息-->
+        <div class="hide">
+            <span class="tx-list">发货信息列表:</span>
+            <table class="tx-search">
+                <tr>
+                    <th>发货日期</th>
+                    <td><input type="text"></td>
+                    <th>发货单位</th>
+                    <td>
+                        <select>
+                            <option>研发部</option>
+                            <option>研发部</option>
+                        </select>
+                    </td>
+                    <th>
+                        <input type="button" value="搜索">
+                    </th>
+                </tr>
+            </table>
+            <ul class="txl-button">
+                <li>
+                    <a><i class="fa fa-mail-forward">  导入</i></a>
+                </li>
+                <li>
+                    <a><i class="fa fa-mail-reply">  导出</i></a>
+                </li>
+                <li>
+                    <a class="btn-lg" data-toggle="modal" data-target="#send"><i class="fa fa-plus">  增加</i></a>
+                </li>
+            </ul>
+            <table class="txl-ifo" cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>货物名称</th>
+                    <th>数量</th>
+                    <th>货物总件数</th>
+                    <th>目的地</th>
+                    <th>收货人</th>
+                    <th>收货人电话</th>
+                    <th>发货人</th>
+                    <th>提货人</th>
+                    <th>提货人电话</th>
+                    <th>付费方式</th>
+                    <th>预收运费</th>
+                    <th>其他费用</th>
+                    <th>备注</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="btn-lg" data-toggle="modal" data-target="#send">
+                    <td>1</td>
+                    <td>接收机</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td>武汉市文秀街中石大楼A座9楼</td>
+                    <td>张三</td>
+                    <td>13339087678</td>
+                    <td>王五</td>
+                    <td>李四</td>
+                    <td>18999000022</td>
+                    <td>转账</td>
+                    <td>1000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--分页-->
+<div id="controls">
+    <div id="jumptoinput">第<input type="text" id="num" value="">页 <a href="javascript:return false">跳转</a></div>
+    <div id="navigation">
+        <img src="../images/first.gif" width="16" height="16" alt="首页" /> <img src="../images/previous.gif" width="16" height="16" alt="上一页" />
+        <div id="text">
+            第 <span id="currentpage">1</span> 页　　共 <span id="pagelimit">1</span> 页
+        </div>
+        <img src="../images/next.gif" width="16" height="16" alt="下一页" /> <img src="../images/last.gif" width="16" height="16" alt="尾页" />
+    </div>
+</div>
+<!--客户信息模态框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">详情：</h4>
+            </div>
+            <div class="modal-body">
+                <a class="edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <label>客户单位名称：</label>
+                        </td>
+                        <td>
+                            <span>华创北斗技术有限公司</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>法人代表：</label>
+                        </td>
+                        <td>
+                            <span>张三</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>经营范围：</label>
+                        </td>
+                        <td>
+                            <span>北斗应用、通信导航、信息系统集成、测绘地理信息、安全监测、水土保持监测、软硬件研发</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>单位地址：</label>
+                        </td>
+                        <td>
+                            <span>湖北省武汉市洪山区文秀街10号A座1号门9</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>联系电话：</label>
+                        </td>
+                        <td>
+                            <span>13371267899</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>企业邮箱：</label>
+                        </td>
+                        <td>
+                            <span>1337126@163.com</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>企业联系人姓名：</label>
+                        </td>
+                        <td>
+                            <span>张三</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>联系人电话：</label>
+                        </td>
+                        <td>
+                            <span>13371267899</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="modal-button">
+                    <input type="button" value="保存" class="add">
+                    <input type="button" value="取消" class="cancel">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--订单信息模态框-->
+<div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">详情：</h4>
+            </div>
+            <div class="modal-body">
+                <a class="edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <label>订单编号：</label>
+                        </td>
+                        <td>
+                            <span>1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>采购单位：</label>
+                        </td>
+                        <td>
+                            <span>华创北斗技术有限公司</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>产品：</label>
+                        </td>
+                        <td>
+                            <span>接收机</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>数量：</label>
+                        </td>
+                        <td>
+                            <span>1000</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>单价：</label>
+                        </td>
+                        <td>
+                            <span>1000.00</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>总金额：</label>
+                        </td>
+                        <td>
+                            <span>100000.00</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>订货日期：</label>
+                        </td>
+                        <td>
+                            <span>20217-12-26</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>汇款日期：</label>
+                        </td>
+                        <td>
+                            <span>2018-01-20</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>货物收到日期：</label>
+                        </td>
+                        <td>
+                            <span>2018-01-20</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>发票信息：</label>
+                        </td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>备注：</label>
+                        </td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="modal-button">
+                    <input type="button" value="保存" class="add">
+                    <input type="button" value="取消" class="cancel">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--发货信息模态框-->
+<div class="modal fade" id="send" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">详情：</h4>
+            </div>
+            <div class="modal-body">
+                <a class="edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <label>序号：</label>
+                        </td>
+                        <td>
+                            <span>1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>货物名称：</label>
+                        </td>
+                        <td>
+                            <span>接收机</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>数量：</label>
+                        </td>
+                        <td>
+                            <span>100</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>货物总件数：</label>
+                        </td>
+                        <td>
+                            <span>1000</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>目的地：</label>
+                        </td>
+                        <td>
+                            <span>武汉市文秀街中石大楼A座9楼</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>收货人：</label>
+                        </td>
+                        <td>
+                            <span>张三</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>收货人电话：</label>
+                        </td>
+                        <td>
+                            <span>13390990890</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>发货人：</label>
+                        </td>
+                        <td>
+                            <span>王五</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>提货人：</label>
+                        </td>
+                        <td>
+                            <span>李四</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>提货人电话：</label>
+                        </td>
+                        <td>
+                            <span>18999087770</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>付费方式：</label>
+                        </td>
+                        <td>
+                            <span>转账</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>预收运费：</label>
+                        </td>
+                        <td>
+                            <span>1000</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>其他费用：</label>
+                        </td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>备注：</label>
+                        </td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="modal-button">
+                    <input type="button" value="保存" class="add">
+                    <input type="button" value="取消" class="cancel">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js" ></script>
+<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+<script rel="stylesheet" type="text/javascript" src="../js/jquery.nicescroll.js"></script>
+<script>
+    $(window).load(function () {
+        $(".edit").click(function () {
+            $(".modal-button").show();
+        })
+        $(".cancel").click(function () {
+            $(".modal-button").hide()
+        })
+        var H = document.body.offsetHeight;
+        var B = H-160+"px";
+        $(".table-box").css('height',B);
+        $(".scroll-bar").css('height',B);
+        $(".txl-ifo").css('height',B);
+
+    $('.table-box').niceScroll({
+        cursorcolor: "#999", //#CC0071 光标颜色
+        cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+        touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+        cursorwidth: "3px", //像素光标的宽度
+        cursorborder: "0", //     游标边框css定义
+        cursorborderradius: "5px", //以像素为光标边界半径
+        autohidemode: false //是否隐藏滚动条
+    });
+        $('.scroll-bar').niceScroll({
+            cursorcolor: "#999", //#CC0071 光标颜色
+            cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+            touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+            cursorwidth: "3px", //像素光标的宽度
+            cursorborder: "0", //     游标边框css定义
+            cursorborderradius: "5px", //以像素为光标边界半径
+            autohidemode: false //是否隐藏滚动条
+        });
+    $(function(){
+        var $div_li =$("div.top ul li");
+        $div_li.click(function(){
+            $(this).addClass("selected")            //当前<li>元素高亮
+                .siblings().removeClass("selected");  //去掉其它同辈<li>元素的高亮
+            var index =  $div_li.index(this);  // 获取当前点击的<li>元素 在 全部li元素中的索引。
+            $("div.tab_menu >div")   	//选取子节点。不选取子节点的话，会引起错误。如果里面还有div
+                .eq(index).show()   //显示 <li>元素对应的<div>元素
+                .siblings().hide(); //隐藏其它几个同辈的<div>元素
+        }).hover(function(){
+            $(this).addClass("hover");
+        },function(){
+            $(this).removeClass("hover");
+        })
+    })
+    })
+</script>
+</html>

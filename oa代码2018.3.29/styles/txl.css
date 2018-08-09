@@ -1,0 +1,145 @@
+.top{
+    width: 100%;
+    height: 36px;
+    background: #f6f6f6;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.top a{
+    font-size: 14px;
+    line-height: 36px;
+    color: #333;
+}
+.tx-list{
+    font-size: 14px;
+    font-weight: 700;
+    color: #42acfc;
+    display: block;
+    width: 100%;
+    padding: 10px 30px;
+    float: left;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.tx-search{
+    float: left;
+}
+.tx-search th{
+     padding-left: 52px;
+ }
+.tx-search td{
+    padding-left: 10px;
+}
+.tx-search th,.tx-search td{
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+}
+.tx-search input,.tx-search select{
+    border-radius: 3px;
+    border: 1px solid #d2d8db;
+    line-height: 28px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+}
+.tx-search input{
+    width: 134px;
+    height: 28px;
+}
+.tx-search select{
+    width: 134px;
+    height: 28px;
+    padding-left: 35px;
+}
+.tx-search input[type=button]{
+    width: 56px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    border: none;
+    background:#42acfc;
+    color:#fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+}
+.tx-search input[type=button]:hover{
+    background: #259ef9;
+    cursor: pointer;
+}
+.txl-button{
+    float: right;
+}
+.txl-button li{
+    float: left;
+    width: 80px;
+    margin-right: 10px;
+}
+.txl-button a{
+    border: 1px solid #42acfc;
+    color:#42acfc;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 6px 8px;
+    display: inline-block;
+}
+.txl-button a:hover{
+    background: #259ef9;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+    color:#fff;
+    border:none;
+}
+.txl-ifo{
+    width: 99%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+    border-right: none;
+}
+.txl-ifo th{
+    font-size: 14px;
+    height: 28px;
+    background: #f1f1f1;
+    text-align: center;
+    border-bottom: #ddd 1px solid;
+    border-right: #ddd 1px solid;
+    color: #333;
+    line-height: 28px
+}
+.txl-ifo td{
+    font-size: 12px;
+    color:#333;
+    text-align: center;
+    padding: 12px 6px 10px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.txl-ifo tr:hover{
+    background: #f8fbfe;
+}
+.table-box{
+    overflow-y: auto;
+    width: 100%;
+    /*height: 374px;*/
+}
+.top-height{
+    height: 108px;
+    margin-bottom: 10px;
+}
+#ascrail2000{
+    left: 1271px;
+}
+body,html{
+    overflow: hidden;
+}
+.pagination{
+    margin:0 0;
+}
+.fy-iframe{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}

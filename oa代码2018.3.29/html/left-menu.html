@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单栏</title>
+    <link rel="stylesheet" type="text/css" href="../styles/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../styles/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../styles/left-menu.css">
+    <link rel="stylesheet" type="text/css" href="../styles/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../js/jquery-1.11.2.min.js" ></script>
+</head>
+<body>
+<div class="left-menu" id="left-menu">
+    <ul class="nav-ul">
+        <li class="treeview active">
+            <a class="aChange" href="./daiban.html" target="db-iframe">
+                <img src="../images/sy-icon.png">
+                <span>首页</span>
+            </a>
+        </li>
+        <li class="treeview">
+            <a class="aChange">
+                <img src="../images/yhgl-icon.png">
+                <span>员工管理</span>
+            </a>
+            <ul class="inside">
+                <li>
+                    <a>
+                        <span class="dotColor"></span>
+                        <span>安排</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="dotColor"></span>
+                        <span>会议</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="dotColor"></span>
+                        <span>日程</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a class="aChange" href="./xsgl.html" target="db-iframe">
+                <img src="../images/xsgl-icon.png">
+                <span>销售管理</span>
+            </a>
+            <ul class="inside">
+                <li>
+                    <a>
+                        <span class="dotColor"></span>
+                        <span>安排</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="dotColor"></span>
+                        <span>会议</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="dotColor"></span>
+                        <span>日程</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a class="aChange" href="./scgl.html" target="db-iframe">
+                <img class="scgl" src="../images/scgl-icon.png">
+                <span>生产管理</span>
+            </a>
+        </li>
+        <li class="treeview">
+            <a class="aChange" href="./cggl.html" target="db-iframe">
+                <img src="../images/cggl-icon.png">
+                <span>采购管理</span>
+            </a>
+        </li>
+        <li class="treeview">
+            <a class="aChange">
+                <img src="../images/ckgl-icon.png">
+                <span>仓库管理</span>
+            </a>
+        </li>
+        <li class="treeview">
+            <a class="aChange">
+                <img src="../images/cwgl-icon.png">
+                <span>财务管理</span>
+            </a>
+        </li>
+        <li class="treeview">
+            <a class="aChange">
+                <img src="../images/xtgl-icon.png">
+                <span>系统管理</span>
+            </a>
+        </li>
+        <li class="treeview">
+            <a class="aChange">
+                <img src="../images/jcxx-icon.png">
+                <span>基础信息管理</span>
+            </a>
+        </li>
+        <li class="treeview">
+            <a class="aChange">
+                <img src="../images/xtpz-icon.png">
+                <span>系统配置管理</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $(".treeview a").click(function(){
+            $(this).addClass('active').siblings('li').removeClass('active');
+            $(this).siblings('.inside').toggle();
+        });
+        $(".inside li").click(function(){
+            $(this).addClass('active').siblings('li').removeClass('active');
+        });
+    })
+</script>
+</html>

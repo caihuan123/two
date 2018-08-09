@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>头部</title>
+    <link rel="stylesheet" type="text/css" href="../styles/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../styles/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+</head>
+<body>
+<div class="top">
+    <div class="logo">
+        <img class="logo-img" src="../images/logoImage.png">
+        <img class="logo-text-img" src="../images/logoText.png">
+        <span class="logo-text">华创北斗技术有限公司OA系统</span>
+    </div>
+    <div class="nav-r">
+        <ul>
+            <li class="hel">
+                <span class="wel">你好！欢迎登录</span>
+            </li>
+            <li class="nav-current">
+                <img src="../images/current.png">
+                <span>当前用户：administrators</span>
+            </li>
+            <li class="xiu">
+                <a href="#">
+                    <img src="../images/revise.png">
+                    <span>修改密码</span>
+                </a>
+            </li>
+            <li class="xiu">
+                <a href="#">
+                    <img src="../images/quit.png">
+                    <span>退出登录</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="fold-left"></div>
+<div class="fold-right"></div>
+<iframe class="menu-iframe" name="menu-iframe" src="left-menu.html" frameborder="0" scrolling="auto"></iframe>
+<iframe class="daiban-iframe" name="db-iframe" src="daiban.html" frameborder="0" scrolling="auto"></iframe>
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js" ></script>
+<script>
+    $(window).load(function (){
+        var H = document.body.offsetHeight;
+        var W = document.body.offsetWidth;
+        var T = H-60+"px";
+        var L = W-180+"px";
+        $(".menu-iframe").css('height',T);
+        $(".daiban-iframe").css('height',T);
+        $(".daiban-iframe").css('width',L);
+        
+        $(".fold-left").click(function () {
+            $(".menu-iframe").hide();
+            $(".daiban-iframe").css("left",20 + "px");
+            $(".fold-left").hide();
+            $(".fold-right").show();
+        })
+
+        $(".fold-right").click(function () {
+            $(".menu-iframe").show();
+            $(".daiban-iframe").css("left",180 + "px");
+            $(".fold-left").show();
+            $(".fold-right").hide();
+        })
+    })
+
+
+</script>
+</html>
